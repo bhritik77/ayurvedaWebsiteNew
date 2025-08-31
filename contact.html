@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Rawat Ayurvedic & Panchkarma Center</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+
+</head>
+<body class="scroll-smooth">
+
+<!-- Navbar -->
+<header class="bg-white shadow-md fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="images/logo.png" alt="Logo" class="h-15 w-auto p-1"/>
+      <h1 class="text-xs md:text-sm font-bold text-blue-600">
+        Rawat Ayurvedic & <br>Panchkarma Center
+      </h1>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-gray-700 font-medium items-center">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+
+      <!-- Dropdown (About) -->
+      <div class="relative group">
+        <span class="cursor-pointer hover:text-blue-600">About</span>
+        <div class="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md w-48">
+          <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">About Ayurveda</a>
+          <a href="aboutPanchkarma.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">About Panchkarma</a>
+        </div>
+      </div>
+
+      <a href="services.html" class="hover:text-blue-600">Services</a>
+      <a href="contact.html" class="hover:text-blue-600">Contact</a>
+    </nav>
+
+    <!-- Mobile Button -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="md:hidden hidden p-4 pb-4 flex flex-col gap-2 text-center">
+    <a href="index.html" class="block py-2 text-gray-700">Home</a>
+    
+    <!-- Dropdown in mobile -->
+    <details class="py-2">
+      <summary class="cursor-pointer text-gray-700">About</summary>
+      <div class="flex flex-col space-y-1">
+        <a href="about.html" class="block py-2 text-gray-700">About Ayurveda</a>
+        <a href="aboutPanchkarma.html" class="block py-2 text-gray-700">About Panchkarma</a>
+      </div>
+    </details>
+
+    <a href="services.html" class="block py-2 text-gray-700">Services</a>
+    <a href="contact.html" class="block py-2 text-gray-700">Contact</a>
+  </div>
+</header>
+
+   <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9634171715" target="_blank" 
+   class="fixed bottom-8 right-8 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-colors z-1000">
+    <!-- WhatsApp Icon (SVG) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.001 2C6.478 2 2 6.477 2 11.999c0 2.12.625 4.085 1.71 5.74L2 22l4.356-1.681A9.963 9.963 0 0 0 12.001 22c5.523 0 10-4.478 10-10.001S17.524 2 12.001 2zm0 18.182a8.159 8.159 0 0 1-4.149-1.139l-.296-.175-2.583.997.988-2.515-.192-.308A8.162 8.162 0 1 1 20.182 12a8.162 8.162 0 0 1-8.181 8.182zm4.465-6.211c-.244-.122-1.448-.715-1.673-.797-.224-.081-.387-.122-.55.122-.163.244-.63.797-.773.961-.142.163-.285.183-.529.061-.244-.122-1.031-.38-1.962-1.211-.725-.647-1.215-1.447-1.357-1.691-.143-.244-.015-.375.107-.497.11-.11.244-.285.366-.428.122-.143.163-.244.244-.407.081-.163.041-.305-.02-.427-.061-.122-.55-1.326-.754-1.815-.198-.476-.398-.411-.55-.418l-.468-.008c-.163 0-.428.061-.651.305s-.854.833-.854 2.036  .873 2.365.995 2.528c.122.163 1.717 2.622 4.158 3.677.582.25 1.036.398 1.39.509.584.186 1.116.16 1.538.097.469-.07 1.448-.592 1.653-1.164.204-.571.204-1.06.143-1.164-.061-.102-.224-.163-.468-.285z"/>
+    </svg>
+</a>
+
+  <!-- Hero Section -->
+<section class="h-[60vh] relative flex items-center justify-center">
+
+  <!-- Background Image with Opacity -->
+  <div class="absolute inset-0 bg-[url('images/hero1.png')] bg-cover bg-center"></div>
+
+    <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
+
+
+  <!-- Content -->
+  <div class="z-10 text-white text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold">Begin Your Healing with Ayurveda</h1>
+    <p class="mt-4 text-lg md:text-xl">
+      Book a personalized consultation or explore our therapies to restore your health naturally
+    </p>
+  </div>
+  
+</section>
+
+<!-- Contact Section -->
+<section class="bg-gray-200 py-16 px-4 md:px-8">
+  <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12">
+    
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-600">Get in Touch</h2>
+      <p class="mt-3 text-gray-600 text-base md:text-lg">
+        Have questions about our therapies, packages, or bookings? We're here to help.
+        Just fill in the form below and our team will reach out to you shortly.
+      </p>
+    </div>
+
+   <form action="https://formsubmit.co/drsangeetarawat@gmail.com" method="POST" class="space-y-6">
+  <!-- Hidden settings -->
+  <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Full Name</label>
+      <input type="text" name="name" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+    </div>
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Email Address</label>
+      <input type="email" name="email" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+    </div>
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Phone Number</label>
+      <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+    </div>
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Subject</label>
+      <input type="text" name="subject" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600">
+    </div>
+  </div>
+
+  <div>
+    <label class="block mb-1 text-sm font-medium text-gray-700">Your Message</label>
+    <textarea name="message" rows="5" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="bg-blue-600 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-md transition">
+      Send Message
+    </button>
+  </div>
+</form>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Google Map-->
+
+<section class="w-full h-[400px] pt-16">
+  <iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1722.547465733679!2d78.02356236439826!3d30.291358979033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929a69582c499%3A0x4ff52166418db50a!2sRAWAT%20AYURVEDIC%20%26%20PANCHAKARMA%20CENTRE!5e0!3m2!1sen!2sin!4v1754887962973!5m2!1sen!2sin"    width="100%" height="100%" 
+    width="100%" height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"
+    class="w-full h-full">
+  </iframe>
+</section>
+
+  
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4 md:px-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8">
+    
+    <!-- Column 1: Logo & About -->
+    <div>
+      <div class="flex items-center gap-2 mb-4">
+        <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Logo" class="h-15 w-auto p-1"/>
+        <h1 class="text-xs md:text-sm font-bold text-blue-600">Rawat Ayurvedic & <br>Panchkarma Center</h1>
+      </a>
+      </div>
+      <p class="text-xs leading-relaxed mb-4">
+      At Rawat Ayurvedic & Panchkarma Center, we blend ancient Ayurvedic wisdom with authentic Panchkarma therapies to heal the body, mind, and soul naturally.
+      Our holistic treatments are designed to detoxify, rejuvenate, and restore balance using time-tested Ayurvedic practices.
+      </p>
+      <div class="flex space-x-4 mt-4">
+        <a href="https://www.facebook.com/people/Rawat-Ayurvedic-Panchakarma-Centre/61574786247019/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" alt="Facebook" class="h-10 w-10 bg-white rounded-3xl"></a>
+        <a href="https://www.instagram.com/rawatayurvedicpanchakarmacentr/reels/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram" class="h-10 w-10 bg-white rounded-3xl"></a>
+<a href="mailto:rawatayurvedicpanchakarmacentr@gmail.com" rel="noopener noreferrer">
+  <img src="images/email.png" alt="email" class="h-10 w-10 bg-white rounded-3xl" />
+</a>
+        <a href="https://wa.me/9634171715" target="_blank" rel="noopener noreferrer"><img src="images/whatsapp.png" alt="Whatsapp" class="h-10 w-10 bg-white rounded-3xl"></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+<div class="md:flex md:justify-center text-left">
+  <div>
+<h4 class="text-2xl font-semibold text-left md:text-3xl md:font-bold mb-6">
+  Quick Links
+</h4>
+    <ul class="space-y-2 text-sm font-semibold">
+      <li class="flex items-center gap-2">
+        <img src="images/right.png" alt="right-icon" class="h-3 w-3">
+        <a href="index.html" class="underline">Home</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <img src="images/right.png" alt="right-icon" class="h-3 w-3">
+        <a href="about.html" class="underline">About</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <img src="images/right.png" alt="right-icon" class="h-3 w-3">
+        <a href="services.html" class="underline">Services</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <img src="images/right.png" alt="right-icon" class="h-3 w-3">
+        <a href="contact.html" class="underline">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <!-- Column 3: Contact Us -->
+    <div>
+      <h4 class="text-2xl font-semibold md:text-3xl md:font-bold mb-4">Contact Us</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-start gap-2">
+<img src="images/gps.png" alt="gps" class="h-8 w-8  bg-white rounded-3xl">
+JSR Plaza, Kargi Patel Nagar Bypass,
+Opp. J.P. Wedding Point, Dehradun,
+Uttarakhand
+</li>
+        <li class="flex items-center gap-2">
+<img src="images/email.png" alt="email" class="h-8 w-8  bg-white rounded-3xl">
+rawatayurvedicpanchakarmacentr@gmail.com
+</li>
+        <li class="flex items-center gap-2">
+<img src="images/phone-call.png" alt="phone-call" class="h-8 w-8  bg-white rounded-3xl">
++91 9634171715
+</li>
+<li class="flex items-center gap-2">
+<img src="images/phone-call.png" alt="phone-call" class="h-8 w-8  bg-white rounded-3xl">
+0135-4056261
+</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="mt-10 text-center text-sm text-white/90">
+    &copy; 2025 Rawat Ayurvedic & Panchkarma Center. All rights reserved.
+  </div>
+</footer>
+
+ <!-- Linking javaScript -->
+ <script src="script.js"></script>
+
+</body>
+</html>
